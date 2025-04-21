@@ -3,23 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Terima Kasih</title>
-  <!-- SweetAlert2 CSS/JS via CDN -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    // Ambil query string dari URL (contoh: ?language=id)
+    const params = new URLSearchParams(window.location.search);
+    const language = params.get('language') || 'id';
+
+    // Teks multilingual
+    const messages = {
+      id: {
+        title: 'Terima Kasih!',
+        text: 'Pesan Anda telah terkirim.'
+      },
+      en: {
+        title: 'Thank You!',
+        text: 'Your message has been sent.'
+      }
+    };
+
+    const msg = messages[language] || messages['id'];
+
+    // Tampilkan SweetAlert dan kembali ke halaman sebelumnya
+    document.addEventListener('DOMContentLoaded', function () {
       Swal.fire({
         icon: 'success',
-        title: 'Terima Kasih!',
-        text: 'Pesan Anda telah terkirim.',
+        title: msg.title,
+        text: msg.text,
         confirmButtonText: 'OK'
-      }).then(function() {
-        // Setelah user klik OK, kembali ke halaman sebelumnya
+      }).then(() => {
         if (document.referrer) {
           window.location.href = document.referrer;
         } else {
-          // kalau referrer kosong, fallback ke history.back()
           history.back();
         }
       });
