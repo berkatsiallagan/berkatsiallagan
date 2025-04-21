@@ -218,27 +218,5 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
-
-    $('#contact-form').on('submit', function(e) {
-      e.preventDefault();  // Mencegah submit normal
-
-      // Kirim data form dengan AJAX
-      $.ajax({
-        url: '/berkat.my.id', // Ganti dengan URL endpoint yang sesuai
-        method: 'POST',
-        data: $(this).serialize(), // Menyertakan data form
-        success: function(res) {
-          // Jika respon sukses, redirect ke halaman thanks
-          if (res.ok) {
-            window.location.href = '/thanks.html'; // Ganti dengan path yang sesuai
-          } else {
-            alert('Terjadi kesalahan, coba lagi!');
-          }
-        },
-        error: function(xhr) {
-          // Error handling jika terjadi masalah dengan request
-          alert('Error saat mengirim data: ' + xhr.statusText);
-        }
-      });
-    });
+  
 })();
