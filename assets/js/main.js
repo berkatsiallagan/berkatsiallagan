@@ -220,3 +220,45 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+  const form = document.querySelector(".php-email-form");
+  const loading = form.querySelector(".loading");
+  const errorMessage = form.querySelector(".error-message");
+  const sentMessage = form.querySelector(".sent-message");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Biar gak reload halaman
+
+    loading.style.display = "block";
+    errorMessage.style.display = "none";
+    sentMessage.style.display = "none";
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      loading.style.display = "none";
+      if (response.ok) {
+        sentMessage.style.display = "block";
+        form.reset();
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            errorMessage.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+          } else {
+            errorMessage.innerHTML = "There was an error sending the message.";
+          }
+          errorMessage.style.display = "block";
+        });
+      }
+    }).catch(error => {
+      loading.style.display = "none";
+      errorMessage.innerHTML = "Oops! There was a problem sending your message.";
+      errorMessage.style.display = "block";
+    });
+  });
