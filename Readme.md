@@ -45,7 +45,8 @@ berkat.my.id/
 
 ## 📫 Kontak
 
-Stay in touch: [@berkat.tech](https://instagram.com/berkat.tech)  
+Email: Berkatsiallagan201105@gmail.com
+Stay in touch: [@berkat.tech](https://instagram.com/berkat.tech) 
 Atau langsung ke websitenya: [berkat.my.id](https://berkat.my.id)
 
 ---
