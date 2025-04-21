@@ -5,7 +5,7 @@
 ## 📌 Versi
 
 ### 🗓️ Versi 1.0 – _21 Februari 2025_  
-Tersimpan di folder `1st version`. Versi awal dari website ini dengan desain dasar dan konten awal.
+Tersimpan di folder `1st version desain`. Versi awal dari website ini dengan desain dasar dan konten awal.
 
 ### 🆕 Versi 2.0 – _21 April 2025_  
 Ini adalah versi terbaru dan aktif saat ini. Dibangun ulang menggunakan template EasyFolio untuk tampilan yang lebih modern dan profesional.
