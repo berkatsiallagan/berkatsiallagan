@@ -1,197 +1,1027 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Berkat Tua Siallagan</title>
-    
-        <!-- Icon Website -->
-        <link rel="icon" href="https://berkat.my.id/assets/images/icon.png">
-    
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="https://berkat.my.id/assets/css/style.css"> 
 
-    
-        <style>
-            html, body {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            /* overflow: auto !important; */
-        }
-    
-        .container {
-            flex: 1;
-        }
-    
-        footer {
-            margin-top: auto;
-        }
-    
-        </style>
-    </head>
-<body class="bg-dark text-light">
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="https://berkat.my.id/assets/images/icon.png" alt="Logo" style="height: 40px; margin-right: 10px; border-radius:5px;">
-                Berkat Tua Siallagan
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about/">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio/">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery/">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact/">Contact</a></li>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Berkat Tua Siallagan</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- FontAwesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: EasyFolio
+  * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
+  * Updated: Feb 21 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Berkat Tua Siallagan</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-    <div class="container text-center mt-5">
-        <h1 class="display-4"><b>Hi, I'm Berkat Tua Siallagan</b></h1>
-        <p class="lead">Software Developer | Web Enthusiast</p>
-        <a href="about/" class="btn btn-primary mt-3">Lihat Profil Saya</a>
+      <div class="header-social-links">
+        <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> -->
+        <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> -->
+        <a href="https://instagram.com/berkat.tech" class="instagram"><i class="bi bi-instagram"> Instagram</i></a>
+        <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+      </div>
+
     </div>
+  </header>
 
-    <!-- Footer -->
-    <footer class="bg-black text-light py-3 mt-5">
-        <div class="container">
-            <div class="row align-items-center text-center text-md-start">
-                <!-- Social Media (Kanan) -->
-                <div class="col-12 col-md-6 text-md-end">
-                    <div class="d-flex justify-content-center align-items-center gap-3 card bg-black text-light border-0 shadow-lg p-2" role="button" data-bs-toggle="modal" data-bs-target="#socialMediaModal">                        
-                        <h6 class="mb-2">Follow Me</h6>
-                        <div class="d-flex justify-content-center gap-3">
-                            <a target="_blank" class="text-primary fs-4">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                            <a target="_blank" class="text-danger fs-4">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                            <a target="_blank" class="text-light fs-4">
-                                <i class="bi bi-github"></i>
-                            </a>
-                            <a target="_blank" class="text-info fs-4">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
-                            <a target="_blank" class="text-secondary fs-4">
-                                <i class="bi bi-tiktok"></i>
-                            </a>
-                            <a target="_blank" class="text-primary fs-4">
-                                <i class="bi bi-twitter"></i>
-                            </a>
-                            <a target="_blank" class="text-danger fs-4">
-                                <i class="bi bi-youtube"></i>
-                            </a>
-                            <a target="_blank" class="text-primary fs-4">
-                                <i class="bi bi-telegram"></i>
-                            </a>
-                            <a target="_blank" class="text-light fs-4">
-                                <i class="bi bi-threads"></i>
-                            </a>
-                            <a target="_blank" class="text-primary fs-4">
-                                <i class="bi bi-discord"></i>
-                            </a>
-                            
-                        </div>
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h2>Web Dev | UI/UX | Coding For Fun</h2>
+            <p class="lead">Transforming ideas into elegant solutions through creative design and innovative development</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+              <a href="#portfolio" class="btn btn-primary"><i class="fas fa-briefcase"></i> View My Work</a>              
+              <a href="#contact" class="btn btn-outline"><i class="fas fa-phone-alt"></i> Let's Connect</a>
+              
+            </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+              <div class="stat-item">
+                <span class="stat-number">1+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Skills </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img src="assets/img/profile/hero-img.svg" alt="Portfolio Hero Image" class="img-fluid shape-3" data-aos="zoom-out" data-aos-delay="300">
+              <div class="shape-1"></div>
+              <div class="shape-2"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Hello! I am Berkat Tua Siallagan, a student majoring in Informatics, specializing in Software Engineering Technology at Politeknik Negeri Batam, focusing on modern web development and innovative digital solutions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image">
+              <img src="assets/img/profile/berkat.jpg" alt="Profile Image" class="img-fluid rounded-4">
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <span class="subtitle">About Me</span>
+
+              <h2>Backend &amp; Web Developer</h2>
+
+              <p class="lead mb-4">With experience in Laravel, MySQL, and Bootstrap 5, I build responsive, fast, and elegant websites. I believe that code is not just syntax, but an art of problem-solving. From designing intuitive UIs to optimizing efficient backends, I always seek the best ways to deliver outstanding digital experiences.</p>
+
+              <p class="mb-4">Software Developer | Web Enthusiast</p>
+
+              <div class="personal-info">
+                <div class="row g-4">
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Name</span>
+                      <span class="value">Berkat Tua Siallagan</span>
                     </div>
-                </div>
-                <!-- Copyright (Kiri) -->
-                <div class="col-12 col-md-6">
-                    <p class="mb-0">&copy; 2025 Berkat Tua Siallagan. All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+                  </div>
 
-<!-- Social Media Modal -->
-<div class="modal fade" id="socialMediaModal" tabindex="-1" aria-labelledby="socialMediaModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-dark text-light">
-            <div class="modal-header">
-                <h5 class="modal-title" id="socialMediaModalLabel">Follow Me on Social Media</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center">
-                <div class="d-flex flex-column gap-3">
-                    <a href="#" target="_blank" class="btn btn-dark social-icon" data-social="Facebook">
-                        <i class="bi bi-facebook"></i> Facebook
-                    </a>
-                    <a href="https://instagram.com/berkat.tech" target="_blank" class="btn btn-dark social-icon" data-social="Instagram">
-                        <i class="bi bi-instagram"></i> Instagram
-                    </a>
-                    <a href="https://www.github.com/berkatsiallagan" target="_blank" class="btn btn-dark social-icon" data-social="GitHub">
-                        <i class="bi bi-github"></i> GitHub
-                    </a>
-                    <a href="#" target="_blank" class="btn btn-dark social-icon" data-social="LinkedIn">
-                        <i class="bi bi-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="#" target="_blank" class="btn btn-dark social-icon" data-social="Tiktok">
-                        <i class="bi bi-tiktok"></i> Tiktok
-                    </a>
-                    <a href="#" target="_blank" class="btn btn-dark social-icon" data-social="Twitter">
-                        <i class="bi bi-twitter"></i> Twitter
-                    </a>
-                    <a href="#" target="_blank" class="btn btn-dark social-icon" data-social="Youtube">
-                        <i class="bi bi-youtube"></i> Youtube
-                    </a>
-                    <a href="#" target="_blank" class="btn btn-dark social-icon" data-social="Telegram">
-                        <i class="bi bi-telegram"></i> Telegram
-                    </a>
-                    <a href="#" target="_blank" class="btn btn-dark social-icon" data-social="Threads">
-                        <i class="bi bi-threads"></i> Threads
-                    </a>
-                    <a href="#" target="_blank" class="btn btn-dark social-icon" data-social="Discord">
-                        <i class="bi bi-discord"></i> Discord
-                    </a>
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Instagram</span>
+                      <span class="value">@berkat.tech</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Age</span>
+                      <span class="value">20 Years</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Email</span>
+                      <span class="value">Berkatsiallagan201105@gmail.com</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Jurusan</span>
+                      <span class="value">Informatika</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Prodi</span>
+                      <span class="value">Teknologi Rekayasa Perangkat Lunak</span>
+                    </div>
+                  </div>
                 </div>
+              </div>
+
+              <div class="signature mt-4">
+                <div class="signature-image">
+                  <img src="assets/img/misc/signature-1-removebg-preview.png" alt="" class="img-fluid">
+                </div>
+                <div class="signature-info">
+                  <h4>Berkat Tua Siallagan</h4>
+                  <p>Batam, Kepulauan Riau, Indonesia</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 skills-animation">
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3>HTML</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+              <span class="text-end d-block">70%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-box">
+              <h3>CSS</h3>
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+              <span class="text-end d-block">60%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-box">
+              <h3>Bootstrap 5</h3>
+              <p>Neque porro quisquam est qui dolorem ipsum quia dolor.</p>
+              <span class="text-end d-block">80%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <h3>Laravel</h3>
+              <p>Quis autem vel eum iure reprehenderit qui in ea voluptate.</p>
+              <span class="text-end d-block">55%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <h3>MySQL</h3>
+              <p>Quis autem vel eum iure reprehenderit qui in ea voluptate.</p>
+              <span class="text-end d-block">70%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <h3>Javascript</h3>
+              <p>Quis autem vel eum iure reprehenderit qui in ea voluptate.</p>
+              <span class="text-end d-block">40%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <h3>UI/UX Desainer</h3>
+              <p>Quis autem vel eum iure reprehenderit qui in ea voluptate.</p>
+              <span class="text-end d-block">50%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <!-- <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-12">
+            <div class="resume-wrapper">
+              <div class="resume-block" data-aos="fade-up">
+                <h2>Work Experience</h2>
+                <!-- <p class="lead">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p> -->
+
+                <div class="timeline timelinework">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">PT. Sumitomo Wiring System - Intership</h4>
+                      <span class="period">Nov, 2022 - Nov, 2023</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Assy Improvement</h3>
+                      <p class="description">During my internship at Sumitomo, I worked in the Assembly Improvement department, focusing on production line enhancements and target achievement. My role involved analyzing production processes and identifying challenges faced by workers to improve efficiency and ensure the production line met its targets.
+
+                        I also managed data files using Microsoft Excel and Word for meeting records and documentation. After conducting process analysis, I presented my findings in meetings with the production management team to discuss potential improvements. This was a continuous process, with daily tasks and monthly schedules aimed at optimizing production workflow and efficiency.</p>
+                    </div>
+                  </div>
+
+                  <!-- <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">Nullam Corp</h4>
+                      <span class="period">2019 - 2023</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Senior graphic design specialist</h3>
+                      <p class="description">
+                        Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas tempus.
+                      </p>
+                      <ul>
+                        <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                        <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+                        <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                        <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                      </ul>
+                      <p></p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-left">
+                      <h4 class="company">Stepping Stone Ltd.</h4>
+                      <span class="period">2015-2019</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Graphic design specialist</h3>
+                      <p class="description">Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas tempus.</p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
+                <h2>My Education</h2>
+                <!-- <p class="lead">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing.</p> -->
+
+                <div class="timeline timelineedu">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">Politeknik Negeri Batam</h4>
+                      <span class="period">2024 - Now</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">D4 - Software Engineering Technology</h3>
+                      <p class="description">A program focused on the development and management of software systems. It equips students with the skills needed for designing, building, and maintaining software applications, emphasizing practical problem-solving, programming, and project management in the tech industry</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">SMKN 3 BATAM</h4>
+                      <span class="period">2021 - 2024</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Computer Engineering and Networking</h3>
+                      <p class="description">A program focused on the design, development, and management of computer systems and networks. It provides students with essential skills in computer hardware, software, and network infrastructure, preparing them for careers in IT and telecommunications</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-left">
+                      <h4 class="company">SMPN 40 BATAM</h4>
+                      <span class="period">2018-2021</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Middle School</h3>
+                      <p class="description">During my time there, I developed strong foundational skills in various subjects, participated in school activities, and formed lasting memories with classmates and teachers. The school provided a supportive environment for academic and personal growth</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-left">
+                      <h4 class="company">SDN 008 BATAM</h4>
+                      <span class="period">2012-2018</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Elementary School</h3>
+                      <p class="description">This  is the first stage of formal education, typically covering grades 1 through 6. It provides students with fundamental knowledge and skills in subjects such as mathematics, science, language arts, and social studies. The focus is on developing a strong academic foundation and fostering social and emotional growth, preparing students for the next phase of their education.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Welcome to my portfolio! Here, I showcase my work in backend and web development, highlighting my expertise in creating efficient, scalable, and user-friendly web applications. Each project reflects my commitment to delivering robust and innovative solutions. Explore my work and see how I bring ideas to life with clean, well-structured code.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All Work</li>
+              <li data-filter=".filter-web">Web Apps</li>
+              <li data-filter=".filter-graphics">Graphics</li>
+              <li data-filter=".filter-motion">Motion</li>
+              <li data-filter=".filter-brand">Branding</li>
+            </ul>
+          </div>
+
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/FutureMail.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/FutureMail.png" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="https://futuremail.ct.ws" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Web Apps</span>
+                  <h3>FutureMail</h3>
+                  <p>A service that allows you to send messages to the future, whether for yourself or others. With a scheduled system, messages are automatically sent at a specified time. It's perfect for preserving memories, sending birthday wishes, or delivering important messages at a later date.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/password-generator.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/password-generator.png" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="https://berkatsiallagan.github.io/password-generator/" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Web Apps</span>
+                  <h3>Password Generator</h3>
+                  <p>A web application for securely creating and managing passwords. Users can generate passwords with various character options, check their strength, and store password history. It includes features like dark mode, a QR Code & Barcode generator, and Font Awesome icons. Built with HTML, CSS, JavaScript, and Bootstrap.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/jadwal-kuliah.png" class="img-fluid" alt="" loading="lazy">
+                  <img src="assets/img/portfolio/FutureMail.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/jadwal-kuliah.png" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="https://berkatsiallagan.github.io/jadwal-kuliah/" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Web Apps</span>
+                  <h3>Print Class Schedule | PDF</h3>
+                  <p>A web application for managing class schedules interactively. Users can easily add, delete, and download their schedules in PDF format. The application also features an online/offline status selector and an input option for location when choosing offline status. This tool makes it simple to organize your academic schedule and access it whenever needed, with the added convenience of downloading it for offline use.
+
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/apprim.jpg" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/apprim.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="https://pbl.polibatam.ac.id/pamerin/detail.php?title=aplikasi-pengelolaan-peminjaman-ruang-meeting&id=MjU2NA==&ta=NQ==&id_tim=MjgwNQ==" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Web Apps</span>
+                  <h3>APPRIM</h3>
+                  <p>Meeting Room Management Application
+                    The Meeting Room Management Application is a digital platform designed to facilitate the booking, management, and monitoring of meeting room usage within an organization or office building. This application aims to enhance the efficiency of managing meeting spaces, reduce scheduling conflicts, and ensure optimal use of the rooms.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Testimonials Section -->
+    <!-- <section id="testimonials" class="testimonials section light-background"> -->
+
+      <!-- Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
+      </div> -->
+      <!-- End Section Title -->
+
+      <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonials-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "slidesPerView": 1,
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Sed ut perspiciatis unde omnis</h2>
+                    <p>
+                      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    </p>
+                    <p>
+                      Beatae magnam dolore quia ipsum. Voluptatem totam et qui dolore dignissimos. Amet quia sapiente laudantium nihil illo et assumenda sit cupiditate. Nam perspiciatis perferendis minus consequatur. Enim ut eos quo.
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-m-7.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Saul Goodman</h3>
+                        <span>Client</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-m-7.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            <!-- </div> -->
+            <!-- End Testimonial Item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Nemo enim ipsam voluptatem</h2>
+                    <p>
+                      Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    </p>
+                    <p>
+                      Dolorem excepturi esse qui amet maxime quibusdam aut repellendus voluptatum. Corrupti enim a repellat cumque est laborum fuga consequuntur. Dolorem nostrum deleniti quas voluptatem iure dolorum rerum. Repudiandae doloribus ut repellat harum vero aut. Modi aut velit aperiam aspernatur odit ut vitae.
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-f-8.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Sara Wilsson</h3>
+                        <span>Designer</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-f-8.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            <!-- </div> -->
+            <!-- End Testimonial Item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>
+                      Labore nostrum eos impedit
+                    </h2>
+                    <p>
+                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    </p>
+                    <p>
+                      Itaque ut explicabo vero occaecati est quam rerum sed. Numquam tempora aut aut quaerat quia illum. Nobis quia autem odit ipsam numquam. Doloribus sit sint corporis eius totam fuga. Hic nostrum suscipit corrupti nam expedita adipisci aut optio.
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-m-9.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Matt Brandon</h3>
+                        <span>Freelancer</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-m-9.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            <!-- </div> -->
+            <!-- End Testimonial Item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Impedit dolor facilis nulla</h2>
+                    <p>
+                      Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    </p>
+                    <p>
+                      Omnis aspernatur accusantium qui delectus praesentium repellendus. Facilis sint odio aspernatur voluptas commodi qui qui qui pariatur. Corrupti deleniti itaque quaerat ipsum deleniti culpa tempora tempore. Et consequatur exercitationem hic aspernatur nobis est voluptatibus architecto laborum.
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-f-10.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Jena Karlis</h3>
+                        <span>Store Owner</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-f-10.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            <!-- </div> -->
+            <!-- End Testimonial Item -->
+          <!-- </div>
+          <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+
+      </div> -->
+
+    <!-- </section> -->
+    <!-- Testimonials Section -->
+
+    <!-- Services Section -->
+    <!-- <section id="services" class="services section"> -->
+
+      <!-- Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p> -->
+      <!-- </div> -->
+      <!-- End Section Title -->
+
+      <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h2 class="fw-bold mb-4 servies-title">Consectetur adipiscing elit sed do eiusmod tempor</h2>
+            <p class="mb-4">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit class aptent taciti sociosqu ad litora.</p>
+            <a href="#" class="btn btn-outline-primary">See all services</a>
+          </div>
+          <div class="col-lg-8">
+            <div class="row g-4">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-item">
+                  <i class="bi bi-activity icon"></i>
+                  <h3><a href="service-details.html">Eget nulla facilisi etiam</a></h3>
+                  <p>Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla.</p>
+                </div> -->
+              <!-- </div> -->
+              <!-- End Service Item -->
+
+              <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-item">
+                  <i class="bi bi-easel icon"></i>
+                  <h3><a href="service-details.html">Duis aute irure dolor</a></h3>
+                  <p>Auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor.</p>
+                </div> -->
+              <!-- </div> -->
+              <!-- End Service Item -->
+
+              <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-item">
+                  <i class="bi bi-broadcast icon"></i>
+                  <h3><a href="service-details.html">Excepteur sint occaecat</a></h3>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                </div> -->
+              <!-- </div> -->
+              <!-- End Service Item -->
+
+              <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-item">
+                  <i class="bi bi-bounding-box-circles icon"></i>
+                  <h3><a href="service-details.html">Tempor incididunt ut labore</a></h3>
+                  <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
+                </div> -->
+              <!-- </div> -->
+              <!-- End Service Item -->
+
+            <!-- </div>
+          </div>
+        </div>
+
+      </div> -->
+
+    <!-- </section> -->
+    <!-- /Services Section -->
+
+    <!-- Faq Section -->
+    <!-- <section id="faq" class="faq section"> -->
+
+      <!-- Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p> -->
+      <!-- </div> -->
+      <!-- End Section Title -->
+
+      <!-- <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <div class="faq-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i> -->
+              <!-- </div> -->
+              <!-- End Faq item-->
+
+              <!-- <div class="faq-item">
+                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i> -->
+              <!-- </div> -->
+              <!-- End Faq item-->
+
+              <!-- <div class="faq-item">
+                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <div class="faq-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i> -->
+              <!-- </div> -->
+              <!-- End Faq item-->
+
+              <!-- <div class="faq-item">
+                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i> -->
+              <!-- </div> -->
+              <!-- End Faq item-->
+
+              <!-- <div class="faq-item">
+                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
+                <div class="faq-content">
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i> -->
+              <!-- </div> -->
+              <!-- End Faq item-->
+
+              <!-- <div class="faq-item">
+                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
+                <div class="faq-content">
+                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i> -->
+              <!-- </div> -->
+              <!-- End Faq item -->
+
+            <!-- </div> -->
+
+          <!-- </div> -->
+          <!-- End Faq Column-->
+
+        <!-- </div> -->
+
+      <!-- </div> -->
+
+    <!-- </section> -->
+    <!-- /Faq Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="content" data-aos="fade-up" data-aos-delay="200">
+              <div class="section-category mb-3">Contact</div>
+              <h2 class="display-5 mb-4">Get in Touch for Collaboration or New Projects</h2>
+              <p class="lead mb-4">I’m always open to new opportunities—whether it’s a collaboration, freelance work, or just a friendly chat. Feel free to reach out!</p>
+
+              <div class="contact-info mt-5">
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-envelope-at me-3"></i>
+                  <span>berkatsiallagan201105@gmail.com</span>
+                </div>
+
+                <!-- <div class="info-item d-flex mb-3">
+                  <i class="bi bi-telephone me-3"></i>
+                  <span>+1 5589 55488 558</span>
+                </div> -->
+
+                <div class="info-item d-flex mb-4">
+                  <i class="bi bi-geo-alt me-3"></i>
+                  <span>Piayu City metropilitan, Batam, Indonesia</span>
+                </div>
+
+                <a href="https://www.google.com/maps/place/Politeknik+Negeri+Batam/@1.118849,104.048585,18z/data=!4m6!3m5!1s0x31d98921856ddfab:0xf9d9fc65ca00c9d!8m2!3d1.1187205!4d104.0484566!16s%2Fg%2F1hc0g0x3x?hl=id&entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" class="map-link d-inline-flex align-items-center">
+                  Open Map
+                  <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-body p-4 p-lg-5">
+
+                <form action="forms/contact.php" method="post" class="php-email-form">
+                  <div class="row gy-4">
+
+                    <div class="col-12">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    </div>
+
+                    <div class="col-12 ">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    </div>
+
+                    <div class="col-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    </div>
+
+                    <div class="col-12">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                      <button type="submit" class="btn btn-submit w-100">Submit Message</button>
+                    </div>
+
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Berkat</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
+        <!-- <a href=""><i class="bi bi-facebook"></i></a> -->
+        <a href="https://instagram.com/berkat.tech"><i class="bi bi-instagram"></i></a>
+        <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://berkat.my.id/">Berkat Tua Siallagan</a>
+      </div>
     </div>
-</div>
 
-<!-- Bootstrap Icons & Bootstrap 5 JS (Required for Modal) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  </footer>
 
-    <!-- Bootstrap JS dan Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-            let navCollapse = document.querySelector(".navbar-collapse");
-    
-            navLinks.forEach(function (link) {
-                link.addEventListener("click", function () {
-                    if (navCollapse.classList.contains("show")) {
-                        new bootstrap.Collapse(navCollapse).toggle();
-                    }
-                });
-            });
-        });
-    
-        document.querySelectorAll('.social-icon').forEach(icon => {
-            icon.addEventListener('click', function(event) {
-                let link = this.getAttribute('href');
-                let platform = this.getAttribute('data-social');
-    
-                if (link === "#") {
-                    event.preventDefault(); // Mencegah link terbuka jika masih coming soon
-                    alert(platform + " is coming soon! 🚀");
-                }
-            });
-        });
-    </script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
