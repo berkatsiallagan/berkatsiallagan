@@ -219,8 +219,6 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
-})();
-
   const form = document.querySelector(".php-email-form");
   const loading = form.querySelector(".loading");
   const errorMessage = form.querySelector(".error-message");
@@ -262,3 +260,6 @@
       errorMessage.style.display = "block";
     });
   });
+})();
+
+  
