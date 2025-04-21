@@ -224,7 +224,7 @@
 
       // Kirim data form dengan AJAX
       $.ajax({
-        url: '/your-endpoint', // Ganti dengan URL endpoint yang sesuai
+        url: '/berkat.my.id', // Ganti dengan URL endpoint yang sesuai
         method: 'POST',
         data: $(this).serialize(), // Menyertakan data form
         success: function(res) {
