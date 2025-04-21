@@ -41,7 +41,7 @@ berkat.my.id/
 ├── CNAME          # Konfigurasi domain
 ├── index.html     # File Utama
 └── README.md      # Catatan
-bash```
+```
 
 ## 📫 Kontak
 
