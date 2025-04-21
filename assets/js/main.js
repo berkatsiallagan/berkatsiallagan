@@ -219,47 +219,26 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
-  const form = document.querySelector(".php-email-form");
-  const loading = form.querySelector(".loading");
-  const errorMessage = form.querySelector(".error-message");
-  const sentMessage = form.querySelector(".sent-message");
+    $('#contact-form').on('submit', function(e) {
+      e.preventDefault();  // Mencegah submit normal
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // Biar gak reload halaman
-
-    loading.style.display = "block";
-    errorMessage.style.display = "none";
-    sentMessage.style.display = "none";
-
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-      method: "POST",
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
-      loading.style.display = "none";
-      if (response.ok) {
-        sentMessage.style.display = "block";
-        form.reset();
-      } else {
-        response.json().then(data => {
-          if (Object.hasOwn(data, 'errors')) {
-            errorMessage.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+      // Kirim data form dengan AJAX
+      $.ajax({
+        url: '/your-endpoint', // Ganti dengan URL endpoint yang sesuai
+        method: 'POST',
+        data: $(this).serialize(), // Menyertakan data form
+        success: function(res) {
+          // Jika respon sukses, redirect ke halaman thanks
+          if (res.ok) {
+            window.location.href = '/thanks.html'; // Ganti dengan path yang sesuai
           } else {
-            errorMessage.innerHTML = "There was an error sending the message.";
+            alert('Terjadi kesalahan, coba lagi!');
           }
-          errorMessage.style.display = "block";
-        });
-      }
-    }).catch(error => {
-      loading.style.display = "none";
-      errorMessage.innerHTML = "Oops! There was a problem sending your message.";
-      errorMessage.style.display = "block";
+        },
+        error: function(xhr) {
+          // Error handling jika terjadi masalah dengan request
+          alert('Error saat mengirim data: ' + xhr.statusText);
+        }
+      });
     });
-  });
 })();
-
-  
