@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Terima Kasih</title>
+  <!-- SweetAlert2 CSS/JS via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        icon: 'success',
+        title: 'Terima Kasih!',
+        text: 'Pesan Anda telah terkirim.',
+        confirmButtonText: 'OK'
+      }).then(function() {
+        // Setelah user klik OK, kembali ke halaman sebelumnya
+        if (document.referrer) {
+          window.location.href = document.referrer;
+        } else {
+          // kalau referrer kosong, fallback ke history.back()
+          history.back();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
