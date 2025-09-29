@@ -39,7 +39,7 @@ A modern, responsive portfolio website showcasing programming projects, blog pos
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 portfolio-website/
 ├── index.html              # Main homepage
 ├── blog/
@@ -61,48 +61,48 @@ portfolio-website/
 ├── .htaccess              # Apache configuration
 ├── 404.html               # Custom error page
 └── README.md              # Project documentation
-\`\`\`
+```
 
 ## 🚀 Quick Start
 
 ### 1. Clone the Repository
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/portfolio-website.git
 cd portfolio-website
-\`\`\`
+```
 
 ### 2. Local Development
 For local development, you can use any local server:
 
 **Using Python:**
-\`\`\`bash
+```bash
 python -m http.server 8000
-\`\`\`
+```
 
 **Using Node.js (http-server):**
-\`\`\`bash
+```bash
 npx http-server
-\`\`\`
+```
 
 **Using PHP:**
-\`\`\`bash
+```bash
 php -S localhost:8000
-\`\`\`
+```
 
 ### 3. Contact Form Setup (Optional)
 If you want the contact form to work:
 
 1. Install PHP dependencies:
-\`\`\`bash
+```bash
 composer install
-\`\`\`
+```
 
 2. Configure email settings in `contact.php`:
-\`\`\`php
+```php
 $mail->Host = 'your-smtp-server.com';
 $mail->Username = 'your-email@domain.com';
 $mail->Password = 'your-app-password';
-\`\`\`
+```
 
 ## 🌐 Deployment
 
@@ -121,7 +121,7 @@ $mail->Password = 'your-app-password';
 
 ### Adding New Projects
 Edit the projects array in `assets/js/portfolio.js`:
-\`\`\`javascript
+```javascript
 const projects = [
     {
         id: 1,
@@ -134,7 +134,7 @@ const projects = [
         githubUrl: "https://github.com/user/repo"
     }
 ];
-\`\`\`
+```
 
 ### Updating Personal Information
 - Edit contact details in `index.html`
