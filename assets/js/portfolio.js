@@ -49,22 +49,22 @@ document.addEventListener("DOMContentLoaded", () => {
   function initializeProjectModals() {
     // Project data
     window.projectData = {
-      ecommerce: {
-        title: "E-Commerce Platform",
-        description: "Platform e-commerce modern dengan fitur lengkap yang mendukung berbagai jenis bisnis online.",
+      apprim: {
+        title: "Peminjaman Ruang Meeting",
+        description: "Aplikasi Pengelolaan Peminjaman Ruang Meeting adalah platform digital yang dirancang untuk memfasilitasi proses pemesanan, pengelolaan, dan pemantauan penggunaan ruang meeting di suatu organisasi atau gedung perkantoran. Aplikasi ini bertujuan untuk meningkatkan efisiensi dalam pengelolaan ruang meeting, mengurangi konflik jadwal, dan memastikan penggunaan ruang yang optimal.",
         fullDescription: `
                   <div class="space-y-6">
-                      <img src="/e-commerce-platform-dashboard-overview.jpg" alt="E-Commerce Platform" class="w-full rounded-lg">
+                      <img src="assets/images/portfolio/apprim.jpg" alt="APPRIM" class="w-full rounded-lg">
                       
                       <div>
                           <h4 class="text-lg font-semibold mb-3">Fitur Utama:</h4>
                           <ul class="list-disc list-inside space-y-2 text-muted">
-                              <li>Multi-vendor marketplace dengan dashboard terpisah</li>
-                              <li>Payment gateway terintegrasi (Stripe, PayPal, Midtrans)</li>
-                              <li>Inventory management system yang comprehensive</li>
-                              <li>Real-time order tracking dan notifications</li>
-                              <li>Advanced analytics dan reporting</li>
-                              <li>Mobile-responsive design dengan PWA support</li>
+                              <li>Daftar Ruang Meeting</li>
+                              <li>Pemesanan Ruang</li>
+                              <li>Kalender dan Jam</li>
+                              <li>Rincian Ruangan</li>
+                              <li>Notifikasi Pengingat</li>
+                              <li>Rating Ruangan</li>
                           </ul>
                       </div>
                       
@@ -74,133 +74,188 @@ document.addEventListener("DOMContentLoaded", () => {
                               <div>
                                   <h5 class="font-medium text-accent mb-2">Frontend:</h5>
                                   <ul class="text-sm text-muted space-y-1">
-                                      <li>React.js dengan TypeScript</li>
-                                      <li>Redux Toolkit untuk state management</li>
-                                      <li>Tailwind CSS untuk styling</li>
-                                      <li>React Query untuk data fetching</li>
+                                      <li>HTML untuk kerangka</li>
+                                      <li>CSS untuk desain</li>
+                                      <li>Bootstrap untuk template desain</li>
+                                      <li>Javascript untuk logika</li>
                                   </ul>
                               </div>
                               <div>
                                   <h5 class="font-medium text-accent mb-2">Backend:</h5>
                                   <ul class="text-sm text-muted space-y-1">
-                                      <li>Node.js dengan Express.js</li>
-                                      <li>MongoDB dengan Mongoose ODM</li>
-                                      <li>JWT untuk authentication</li>
-                                      <li>Socket.io untuk real-time features</li>
+                                      <li>MySQL</li>
                                   </ul>
                               </div>
                           </div>
                       </div>
                       
                       <div class="flex space-x-4">
-                          <a href="#" class="bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-lg transition-colors">
-                              <i class="fas fa-external-link-alt mr-2"></i>Live Demo
-                          </a>
-                          <a href="#" class="border border-accent text-accent hover:bg-accent hover:text-white px-6 py-2 rounded-lg transition-colors">
-                              <i class="fab fa-github mr-2"></i>Source Code
+                          <a href="https://pbl.polibatam.ac.id/pamerin/detail.php?title=aplikasi-pengelolaan-peminjaman-ruang-meeting&id=MjU2NA==&ta=NQ==&id_tim=MjgwNQ==" class="bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-lg transition-colors">
+                              <i class="fas fa-external-link-alt mr-2"></i>Dokumentasi
                           </a>
                       </div>
                   </div>
               `,
-        tech: ["React", "Node.js", "MongoDB", "Stripe"],
-        year: "2024",
+        tech: ["HTML", "CSS", "Javascript", "MySQL"],
+        year: "Des 2024",
       },
-      fitness: {
-        title: "Fitness Tracking App",
-        description: "Aplikasi mobile untuk tracking workout, nutrition, dan progress fitness dengan AI recommendations.",
+      password_generator: {
+        title: "Password Generator",
+        description: "Aplikasi web untuk membuat dan mengelola password secara aman. Pengguna dapat menghasilkan password dengan berbagai opsi karakter, mengecek kekuatannya, serta menyimpan riwayat password. Dilengkapi fitur mode gelap, QR Code & Barcode generator, serta ikon dari Font Awesome. Dibangun dengan HTML, CSS, JavaScript, dan Bootstrap.",
         fullDescription: `
                   <div class="space-y-6">
-                      <img src="/fitness-app-mobile-interface-screens.jpg" alt="Fitness App" class="w-full rounded-lg">
+                      <img src="assets/images/portfolio/password-generator.png" alt="Password Generator" class="w-full rounded-lg">
                       
                       <div>
                           <h4 class="text-lg font-semibold mb-3">Fitur Utama:</h4>
                           <ul class="list-disc list-inside space-y-2 text-muted">
-                              <li>Workout tracking dengan timer dan rest periods</li>
-                              <li>Nutrition logging dengan barcode scanner</li>
-                              <li>AI-powered workout recommendations</li>
-                              <li>Progress tracking dengan detailed analytics</li>
-                              <li>Social features untuk motivation</li>
-                              <li>Wearable device integration</li>
+                              <li>Generate Password Kuat</li>
+                              <li>Cek Kekuatan Password</li>
+                              <li>QR Code Generator</li>
+                              <li>Barcode Generator</li>
                           </ul>
                       </div>
-                      
+
+                      <div>
+                          <h4 class="text-lg font-semibold mb-3">Teknologi yang Digunakan:</h4>
+                          <div class="grid grid-cols-2 gap-4">
+                              <div>
+                                  <h5 class="font-medium text-accent mb-2">Frontend:</h5>
+                                  <ul class="text-sm text-muted space-y-1">
+                                      <li>HTML CSS JS</li>
+                                      <li>Bootstrap5 tampilan responsif</li>
+                                      <li>zxcvbn.js analisis kekuatan password</li>
+                                      <li>JsBarcode membuat barcode dari password</li>
+                                      <li>QRCode Generator membuat QR Code dari password</li>
+                                      <li>Font Awesome membuat Ikon</li>
+                                  </ul>
+                              </div>
+                              <div>
+                                  <h5 class="font-medium text-accent mb-2">Backend:</h5>
+                                  <ul class="text-sm text-muted space-y-1">
+                                      <li>-</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+
                       <div class="flex space-x-4">
-                          <a href="#" class="bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-lg transition-colors">
-                              <i class="fas fa-mobile-alt mr-2"></i>App Store
+                          <a href="https://berkatsiallagan.github.io/password-generator/" class="bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-lg transition-colors">
+                              <i class="fas fa-mobile-alt mr-2"></i>Coba Aplikasi
                           </a>
-                          <a href="#" class="border border-accent text-accent hover:bg-accent hover:text-white px-6 py-2 rounded-lg transition-colors">
+                          <a href="https://github.com/berkatsiallagan/password-generator" class="border border-accent text-accent hover:bg-accent hover:text-white px-6 py-2 rounded-lg transition-colors">
                               <i class="fab fa-github mr-2"></i>Source Code
                           </a>
                       </div>
                   </div>
               `,
-        tech: ["React Native", "Firebase", "TensorFlow"],
+        tech: ["HTML-CSS-JS", "Bootstrap", "Font Awesome"],
         year: "2024",
       },
-      lms: {
-        title: "Learning Management System",
-        description: "Platform pembelajaran online dengan fitur video streaming, quiz interaktif, dan progress tracking.",
+      jadwal_kuliah: {
+        title: "Cetak Jadwal Kuliah",
+        description: "Aplikasi web untuk mengelola jadwal mata kuliah secara interaktif. Pengguna dapat dengan mudah menambah, menghapus, dan mengunduh jadwal dalam format gambar. Aplikasi ini juga dilengkapi dengan fitur pemilihan status online atau offline, serta input lokasi jika memilih offline.lalu dicetak menjadi PDF",
         fullDescription: `
                   <div class="space-y-6">
-                      <img src="/lms-dashboard.png" alt="LMS Platform" class="w-full rounded-lg">
+                      <img src="assets/images/portfolio/jadwal-kuliah.png" alt="Jadwal kuliah" class="w-full rounded-lg">
                       
                       <div>
                           <h4 class="text-lg font-semibold mb-3">Fitur Utama:</h4>
                           <ul class="list-disc list-inside space-y-2 text-muted">
-                              <li>Video streaming dengan adaptive bitrate</li>
-                              <li>Interactive quizzes dan assignments</li>
-                              <li>Discussion forums dan live chat</li>
-                              <li>Certificate generation system</li>
-                              <li>Advanced analytics untuk instructors</li>
-                              <li>Mobile app untuk iOS dan Android</li>
+                              <li>Tambah Jadwal</li>
+                              <li>Pengelolaan Status</li>
+                              <li>Unduh Jadwal</li>
+                              <li>Hapus Jadwal</li>
                           </ul>
                       </div>
-                      
+
+                      <div>
+                          <h4 class="text-lg font-semibold mb-3">Teknologi yang Digunakan:</h4>
+                          <div class="grid grid-cols-2 gap-4">
+                              <div>
+                                  <h5 class="font-medium text-accent mb-2">Frontend:</h5>
+                                  <ul class="text-sm text-muted space-y-1">
+                                      <li>HTML5</li>
+                                      <li>CSS3</li>
+                                      <li>JavaScript</li>
+                                      <li>SweetAlert2</li>
+                                      <li>html2canvas</li>
+                                  </ul>
+                              </div>
+                              <div>
+                                  <h5 class="font-medium text-accent mb-2">Backend:</h5>
+                                  <ul class="text-sm text-muted space-y-1">
+                                      <li>-</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+
                       <div class="flex space-x-4">
-                          <a href="#" class="bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-lg transition-colors">
-                              <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                          <a href="https://berkatsiallagan.github.io/jadwal-kuliah/" class="bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-lg transition-colors">
+                              <i class="fas fa-mobile-alt mr-2"></i>Coba Aplikasi
                           </a>
-                          <a href="#" class="border border-accent text-accent hover:bg-accent hover:text-white px-6 py-2 rounded-lg transition-colors">
+                          <a href="https://github.com/berkatsiallagan/jadwal-kuliah" class="border border-accent text-accent hover:bg-accent hover:text-white px-6 py-2 rounded-lg transition-colors">
                               <i class="fab fa-github mr-2"></i>Source Code
                           </a>
                       </div>
                   </div>
               `,
-        tech: ["Vue.js", "Laravel", "MySQL"],
-        year: "2023",
+        tech: ["HTML5", "CSS3", "JavaScript", "SweetAlert2", "html2canvas"],
+        year: "Mar 2025",
       },
-      banking: {
-        title: "Banking App UI Design",
-        description:
-          "Desain UI/UX untuk aplikasi banking dengan fokus pada security, accessibility, dan user experience.",
+      futuremail: {
+        title: "FutureMail",
+        description: "FutureMail adalah layanan yang memungkinkan kamu mengirim pesan ke masa depan, baik untuk diri sendiri maupun orang lain. Dengan sistem terjadwal, pesan akan dikirim otomatis pada waktu yang telah ditentukan. Cocok untuk menyimpan kenangan, mengirim ucapan ulang tahun, atau menyampaikan pesan penting di kemudian hari.",
         fullDescription: `
                   <div class="space-y-6">
-                      <img src="/banking-app-ui-design-screens.jpg" alt="Banking App Design" class="w-full rounded-lg">
+                      <img src="assets/images/portfolio/futuremail.png" alt="FutureMail" class="w-full rounded-lg">
                       
                       <div>
-                          <h4 class="text-lg font-semibold mb-3">Design Process:</h4>
+                          <h4 class="text-lg font-semibold mb-3">Fitur Utama:</h4>
                           <ul class="list-disc list-inside space-y-2 text-muted">
-                              <li>User research dan competitive analysis</li>
-                              <li>Information architecture dan user flows</li>
-                              <li>Wireframing dan prototyping</li>
-                              <li>Visual design dengan design system</li>
-                              <li>Usability testing dan iterations</li>
-                              <li>Accessibility compliance (WCAG 2.1)</li>
+                              <li>Pesan Masa Depan</li>
+                              <li>Pesan Ulang Tahun</li>
+                              <li>Pesan untuk Seseorang</li>
                           </ul>
                       </div>
-                      
+
+                      <div>
+                          <h4 class="text-lg font-semibold mb-3">Teknologi yang Digunakan:</h4>
+                          <div class="grid grid-cols-2 gap-4">
+                              <div>
+                                  <h5 class="font-medium text-accent mb-2">Frontend:</h5>
+                                  <ul class="text-sm text-muted space-y-1">
+                                      <li>HTML5</li>
+                                      <li>CSS3</li>
+                                      <li>JavaScript</li>
+                                      <li>Bootstrap 5</li>
+                                      <li>PHP</li>
+                                      <li>PHPMailer</li>
+                                      <li>SweetAlert2</li>
+                                  </ul>
+                              </div>
+                              <div>
+                                  <h5 class="font-medium text-accent mb-2">Backend:</h5>
+                                  <ul class="text-sm text-muted space-y-1">
+                                      <li>MySQL</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+
                       <div class="flex space-x-4">
-                          <a href="#" class="bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-lg transition-colors">
-                              <i class="fab fa-figma mr-2"></i>Figma Prototype
+                          <a href="https://futuremail.ct.ws" class="bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-lg transition-colors">
+                              <i class="fas fa-mobile-alt mr-2"></i>Coba Aplikasi
                           </a>
-                          <a href="#" class="border border-accent text-accent hover:bg-accent hover:text-white px-6 py-2 rounded-lg transition-colors">
-                              <i class="fas fa-file-pdf mr-2"></i>Case Study
+                          <a href="https://github.com/berkatsiallagan/futuremail" class="border border-accent text-accent hover:bg-accent hover:text-white px-6 py-2 rounded-lg transition-colors">
+                              <i class="fab fa-github mr-2"></i>Source Code
                           </a>
                       </div>
                   </div>
               `,
-        tech: ["Figma", "Prototyping", "User Research"],
-        year: "2024",
+        tech: ["HTML5", "CSS3", "JavaScript","Bootstrap5", "PHP","PHPMailer","MySQL","SweetAlert2"],
+        year: "Mar 2025",
       },
       microservices: {
         title: "Microservices API Platform",
