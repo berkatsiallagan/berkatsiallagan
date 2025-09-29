@@ -1,6 +1,6 @@
-# 🚀 Professional Programming Portfolio
+# 🚀 berkat.my.id
 
-A modern, responsive portfolio website showcasing programming projects, blog posts, and video content. Built with clean HTML, CSS, and JavaScript for optimal performance and GitHub Pages compatibility.
+Hello! I am Berkat Tua Siallagan, a student majoring in Informatics, specializing in Software Engineering Technology at Politeknik Negeri Batam, focusing on modern web development and innovative digital solutions.
 
 ![Portfolio Preview](https://img.shields.io/badge/Status-Live-brightgreen) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
 
@@ -40,7 +40,9 @@ A modern, responsive portfolio website showcasing programming projects, blog pos
 ## 📁 Project Structure
 
 ```
-portfolio-website/
+berkat.my.id/
+├── 1st Version desain      # Old Desain
+├── 2nd Version desain      # Old Desain
 ├── index.html              # Main homepage
 ├── blog/
 │   └── index.html          # Blog section
@@ -67,8 +69,8 @@ portfolio-website/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/portfolio-website.git
-cd portfolio-website
+git clone https://github.com/berkatsiallagan/berkatsiallagan.git
+cd berkatsiallagan
 ```
 
 ### 2. Local Development
@@ -110,31 +112,12 @@ $mail->Password = 'your-app-password';
 1. Push your code to a GitHub repository
 2. Go to repository Settings → Pages
 3. Select source branch (usually `main` or `master`)
-4. Your site will be available at `https://yourusername.github.io/repository-name`
+4. Your site will be available at `https://berkat.my.id`
 
 ### Custom Domain (Optional)
 1. Add a `CNAME` file with your domain name
 2. Configure DNS settings with your domain provider
 3. Enable HTTPS in GitHub Pages settings
-
-## 🎯 Customization
-
-### Adding New Projects
-Edit the projects array in `assets/js/portfolio.js`:
-```javascript
-const projects = [
-    {
-        id: 1,
-        title: "Your Project Name",
-        category: "web-app",
-        image: "path/to/image.jpg",
-        description: "Project description",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        demoUrl: "https://demo-link.com",
-        githubUrl: "https://github.com/user/repo"
-    }
-];
-```
 
 ### Updating Personal Information
 - Edit contact details in `index.html`
@@ -176,10 +159,11 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- **Email**: your.email@domain.com
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
+- **Email**: berkatsiallagan201105@gmail.com
+- **LinkedIn**: [Berkat Siallagan](https://www.linkedin.com/in/berkat-tua-siallagan-349596361/)
 - **GitHub**: [Your GitHub Profile](https://github.com/yourusername)
-- **Website**: [Your Portfolio Website](https://yourusername.github.io/portfolio-website)
+- **Website**: [Berkat.my.id](https:berkat.my.id)
+- **Whatsapp**: [Whatsapp Business](https://wa.me/6282284710929)
 
 ## 🙏 Acknowledgments
 
