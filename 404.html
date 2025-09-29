@@ -1,111 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not Found | berkatsiallagan</title>
-    <!-- Tailwind CSS CDN -->
+    <title>404 - Halaman Tidak Ditemukan | DevPortfolio</title>
+    
+     Tailwind CSS 
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- SweetAlert2 CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- React CDN -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>
-        .bg-gradient-404 {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        }
-        .hover-scale {
-            transition: transform 0.3s ease;
-        }
-        .hover-scale:hover {
-            transform: scale(1.05);
-        }
-    </style>
-</head>
-<body class="bg-gradient-404 min-h-screen flex items-center">
-    <div id="root" class="container mx-auto px-4"></div>
-
-    <script type="text/babel">
-        const { useState, useEffect } = React;
-
-        function App() {
-            const [countdown, setCountdown] = useState(5);
-            
-            useEffect(() => {
-                const timer = setInterval(() => {
-                    setCountdown(prev => prev - 1);
-                }, 1000);
-                
-                return () => clearInterval(timer);
-            }, []);
-            
-            useEffect(() => {
-                if (countdown === 0) {
-                    Swal.fire({
-                        title: 'Redirecting to Homepage!',
-                        text: 'You will be redirected in a moment...',
-                        icon: 'info',
-                        timer: 2000,
-                        showConfirmButton: false
-                    }).then(() => {
-                        window.location.href = '/';
-                    });
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#1e293b',
+                        accent: '#3b82f6',
+                        muted: '#64748b',
+                        light: '#f8fafc'
+                    }
                 }
-            }, [countdown]);
-            
-            const showErrorDetails = () => {
-                Swal.fire({
-                    title: '404 Error Details',
-                    html: `
-                        <div class="text-left">
-                            <p class="mb-2">Possible reasons:</p>
-                            <ul class="list-disc pl-5 mb-4">
-                                <li>The page was moved or deleted</li>
-                                <li>You typed the wrong URL</li>
-                                <li>The page is temporarily unavailable</li>
-                            </ul>
-                            <p>If this is a mistake, please <a href="https://github.com/berkatsiallagan/repo/issues" class="text-blue-500 hover:underline" target="_blank">report it</a>.</p>
-                        </div>
-                    `,
-                    icon: 'error',
-                    confirmButtonText: 'Got it!',
-                    confirmButtonColor: '#3b82f6',
-                });
-            };
-            
-            return (
-                <div className="max-w-2xl mx-auto text-center py-16 px-6 sm:py-20 sm:px-8 lg:px-10 bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl">
-                    <div className="text-9xl font-bold text-gray-700 mb-6">404</div>
-                    <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4">
-                        Oops! Page not found.
-                    </h1>
-                    <p className="text-lg text-gray-600 mb-8">
-                        The page you're looking for doesn't exist or has been moved.
-                    </p>
-                    
-                    <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-                        <a href="/" 
-                           className="hover-scale px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all">
-                            Go Back Home
-                        </a>
-                        <button onClick={showErrorDetails}
-                                className="hover-scale px-6 py-3 bg-gray-200 text-gray-800 font-medium rounded-lg shadow hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-all">
-                            Error Details
-                        </button>
-                    </div>
-                    
-                    <div className="text-gray-500">
-                        <p>Redirecting in {countdown} seconds...</p>
-                        <p className="mt-2">Or <a href="https://github.com/berkatsiallagan" className="text-blue-600 hover:underline">visit my GitHub profile</a></p>
-                    </div>
-                </div>
-            );
+            }
         }
-
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<App />);
     </script>
+    
+     Font Awesome 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-primary text-light font-sans antialiased min-h-screen flex items-center justify-center">
+    <div class="text-center px-6">
+        <div class="mb-8">
+            <i class="fas fa-exclamation-triangle text-6xl text-accent mb-4"></i>
+            <h1 class="text-6xl font-bold mb-4">404</h1>
+            <h2 class="text-2xl font-semibold mb-4">Halaman Tidak Ditemukan</h2>
+            <p class="text-muted mb-8 max-w-md mx-auto">
+                Maaf, halaman yang Anda cari tidak dapat ditemukan. 
+                Mungkin halaman telah dipindahkan atau URL salah.
+            </p>
+        </div>
+        
+        <div class="space-x-4">
+            <a href="/" class="bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300 inline-block">
+                <i class="fas fa-home mr-2"></i>
+                Kembali ke Beranda
+            </a>
+            <button onclick="history.back()" class="border border-secondary hover:border-accent text-light hover:text-accent px-6 py-3 rounded-lg font-medium transition-colors duration-300">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Kembali
+            </button>
+        </div>
+    </div>
 </body>
 </html>
