@@ -161,7 +161,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - **Email**: berkatsiallagan201105@gmail.com
 - **LinkedIn**: [Berkat Siallagan](https://www.linkedin.com/in/berkat-tua-siallagan-349596361/)
-- **GitHub**: [Berkat Siallagan](https://github.com/yourusername)
+- **GitHub**: [Berkat Siallagan](https://github.com/berkatsiallagan)
 - **Website**: [Berkat.my.id](https:berkat.my.id)
 - **Whatsapp**: [Whatsapp Business](https://wa.me/6282284710929)
 
